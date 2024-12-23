@@ -1,0 +1,272 @@
+You are tasked with developing a Java program to manage employee records. The program should allow users to input the first name, last name, employee ID, and
+ job title of an employee. Once the user inputs these details, the program should display the employee's information, including their full name, employee ID, 
+	and job title.
+
+Requirements:
+
+Create a class Person with the following attributes:
+•	firstName - String
+•	lastName - String
+
+This class serves as a base class for other classes and will be extended by the 'Employee' class.
+
+Create a class 'Employee' that extends the 'Person' class:
+
+•	Inherits attributes firstName and lastName from Person.
+•	Has additional attributes:
+1.	employeeId - int
+2.	jobTitle - String
+•	Implement getters, setters, and constructors for all the above-mentioned attributes in both Person and Employee classes.
+
+Create a class named 'Main' which contains the main method where program execution begins:
+
+•	It prompts the user to input the details of an employee.
+•	It creates an Employee object with the provided details.
+•	It displays the employee's information using the getters implemented in the 'Employee' class.
+Input format :
+•	The first line consists of a String that represents firstName.
+•	The second line consists of a String that represents lastName.
+•	The third line consists of an int that represents the employeeId.
+•	The fourth line consists of a String that represents the jobTitle.
+Output format :
+•	The output should display the employee details in the following format:
+Employee details:
+Name: <firstName> <lastName>, <jobTitle>
+Employee ID: <employeeId>
+
+Refer to the sample output for formatting specifications.
+Sample test cases :
+Input 1 :
+John
+Mathew
+120948
+Developer
+Output 1 :
+Employee details:
+Name: John Mathew, Developer
+Employee ID: 120948
+Input 2 :
+Tony
+Stark
+98364
+Senior Program Manager
+Output 2 :
+Employee details:
+Name: Tony Stark, Senior Program Manager
+Employee ID: 9836
+
+
+
+
+
+============================================================================================================================================================
+
+
+
+
+
+ONLINE TRANSACTION
+
+Google Pay is a popular digital payment platform that allows users to send and receive money securely. It supports various types of transactions, 
+including person-to-person payments, online purchases, and bill payments.
+
+Implement the following classes to represent different types of transactions in Google Pay:
+
+1. The Transaction class should have the following attributes:
+ 
+
+2. The PeerToPeerTransaction class should inherit from Transaction and have an additional attribute:
+ 
+ 
+  
+3. The OnlinePurchaseTransaction class should inherit from Transaction and have an additional attribute:
+ 
+ 
+
+4. The BillPaymentTransaction class should inherit from Transaction and have an additional attribute:
+ 
+ 
+
+Write a Java program that demonstrates the usage of these classes. Create instances of PeerToPeerTransaction, OnlinePurchaseTransaction, 
+and BillPaymentTransaction objects, and display their respective transaction information.
+
+Your task is to implement the necessary classes and complete the main method to demonstrate the functionality. Provide the appropriate access modifiers, 
+constructors, and methods as needed.
+Input format :
+•	The first input is an integer value representing the transaction ID.
+•	The second input is a double value representing the amount.
+•	The third input is a String value representing the recipient.
+•	The fourth input is a String value representing the merchant.
+•	The fifth input is a String value representing the bill type.
+Output format :
+The output should be in the following format:
+
+Peer-to-Peer Transaction:
+Transaction ID: <transactionId>
+Amount: $<amount>
+Recipient: <recipient>
+
+Online Purchase Transaction:
+Transaction ID: <transactionId>
+Amount: $<amount>
+Merchant: <merchant>
+
+Bill Payment Transaction:
+Transaction ID: <transactionId>
+Amount: $<amount>
+Bill Type: <billType>
+
+=====================================================================================================
+
+Employee Categorization by Salary Level
+
+A company maintains a database that includes the details of all employees. Employees are categorized into two levels based on their salary:
+
+Level 1: Top management with a salary of more than $100.
+Level 2: Staff with a salary of $100 or less.
+
+Your task is to implement a Java program to categorize employees based on their salary levels.
+
+Requirements:
+
+1. Employee Class:
+
+Attributes:
+•	empId (int): The employee's ID.
+•	salary (float): The employee's salary.
+
+Methods:
+•	Constructor to initialize 'empId' and 'salary'.
+
+2. EmployeeLevel Class:
+
+Inherits from 'Employee'.
+
+Methods:
+•	Constructor to initialize 'empId' and 'salary'.
+•	Method to determine and return the employee's level based on their salary.
+Input format :
+•	The input contains the empId and salary of the employee, separated by a space.
+Output format :
+•	The output should display the empId, salary, and level of the employee, each on a new line.
+
+Refer to the sample output for formatting specifications.
+Sample test cases :
+Input 1 :
+253 46.6
+Output 1 :
+253
+46.6
+2
+Input 2 :
+156 167
+Output 2 :
+156
+167.0
+1
+
+=====================================================================================================
+
+Bob has been tasked with creating a program to calculate and display the circumference and area of the circle.
+
+The program should allow Bob to input the radius of a circle as both an integer and a double and compute both the circumference and area of the circle using separate overloaded methods:
+1.	calculateCircumference- To calculate the circumference using the formula 2 * 3.14 * radius
+2.	calculateArea- To calculate the area 3.14 * radius * radius
+
+Write a program to help Bob.
+Input format :
+The first line of input consists of an integer m, representing the radius of the circle as a whole number.
+The second line consists of a double value n, representing the radius of the circle as a decimal number.
+Output format :
+The first line of output displays two space-separated double values, rounded to two decimal places, representing the circumference of the circle with the integer radius and the double radius, respectively.
+The second line displays two space-separated double values, rounded to two decimal places, representing the area of the circle with the integer radius and the double radius, respectively.
+
+Refer to the sample output for formatting specifications.
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+1 ≤ m ≤ 100
+1.00 ≤ n ≤ 100.00
+Sample test cases :
+Input 1 :	
+5
+3.5
+Output 1 :
+31.40 21.98
+78.50 38.47
+Input 2 :
+1
+1.00
+Output 2 :
+6.28 6.28
+3.14 3.14
+Input 3 :
+100
+100.00
+Output 3 :
+628.00 628.00
+31400.00 31400.00
+
+=====================================================================================================
+
+Hagrid needs a program capable of performing two calculations: square roots and cube roots. 
+1.	When he inputs an integer value, the program calculates the square root and displays the result. 
+2.	Likewise, if he enters a double, he anticipates the program to compute the cube root and display the outcome. 
+
+Create a program that enables Hagrid to input a number and then see the result of the respective root calculation. Use method overloading with the name calculateRoot() 
+for this and also sqrt() and cbrt() functions from the Java library.
+Input format :
+The input consists of either an integer n or a double value d, representing the numerical value entered by Hagrid.
+Output format :
+If the input is an integer, the output displays the square root of n rounded to one decimal place.
+If the input is a double value, the output displays the cube root of d rounded to one decimal place.
+
+Refer to the sample output for the formatting specifications.
+Sample test cases :
+Input 1 :
+4
+Output 1 :
+2.0
+Input 2 :
+27.0
+Output 2 :
+3.0
+Input 3 :
+1000
+Output 3 :
+31.6
+Input 4 :
+1000.00
+Output 4 :
+10.0
+
+=====================================================================================================
+
+Problem Statement
+
+Teena's retail store has implemented a Loyalty Points System to reward customers based on their spending. The program includes two classes: 
+Customer and PremiumCustomer.
+
+For regular customers: Loyalty points = amount spent / 10
+For premium customers: Loyalty points = 2 * (amount spent / 10)
+
+Calculate and display the loyal points received by the customers using an overridden method calculateLoyaltyPoints.
+Input format :
+The first line of input consists of an integer representing the amount spent by the customer.
+The second line consists of premium customer status (a string) - "yes" if the customer is a premium customer, "no" if they are not.
+Output format :
+The output displays the loyalty points earned based on the amount spent.
+
+Refer to the sample output for formatting specifications.
+Code constraints :
+1 ≤ amount ≤ 10,000
+Sample test cases :
+Input 1 :
+50
+yes
+Output 1 :
+10
+Input 2 :
+40
+no
+Output 2 :
+4
