@@ -1,0 +1,180 @@
+Problem Statement
+
+Rithish is developing a straightforward pizza ordering system. To achieve this, he needs a Pizza class with a constructor for the base price and topping cost, 
+along with a calculatePrice method overriding. He also wants a DiscountedPizza class that inherits from Pizza, applying a 10% discount for more than three toppings.
+
+The program prompts the user for inputs, creates instances of both classes, calculates regular and discounted prices, and displays them formatted appropriately.
+
+Example 1
+
+Input:
+9.5
+1.25
+3
+Output: 
+Price without discount: Rs.13.25
+Price with discount: Rs.13.25
+Explanation:
+Rithish orders a pizza with a base price of Rs. 9.5, a topping cost of Rs. 1.25, and selects 3 toppings. The price is calculated as 9.5 + (1.25 * 3) = 13.25. 
+The regular and discounted prices are both Rs. 13.25, as no discount has been applied.
+
+Example 2
+
+Input:
+11.0
+2.0
+7
+Output: 
+Price without discount: Rs.25.00
+Price with discount: Rs.22.50
+Explanation:
+Rithish orders another pizza with a higher base price of Rs. 11.0, a topping cost of Rs. 2.0, and chooses 7 toppings. 
+Regular Price: 11.0 + (2.0 * 7) = Rs. 25.00.
+Discounted Price: The discounted price is calculated as 90% of the regular price, i.e., 0.9 * 25.00 = Rs.22.50. 
+Input format :
+The first line of input consists of a double value, representing the base price of the pizza.
+The second line consists of a double value, representing the cost per topping.
+The third line consists of an integer, representing the number of toppings chosen for the pizza.
+Output format :
+The first line of output prints the price without discount, rounded off to two decimal places.
+The second line prints the price with the discount, rounded off to two decimal places.
+
+Refer to the sample output for formatting specifications.
+Code constraints :
+The base price and the cost per topping should be greater than zero.
+1 ≤ number of toppings ≤ 10
+Sample test cases :
+Input 1 :
+9.5
+1.25
+3
+Output 1 :
+Price without discount: Rs.13.25
+Price with discount: Rs.13.25
+Input 2 :
+11.0
+2.0
+7
+Output 2 :
+Price without discount: Rs.25.00
+Price with discount: Rs.22.50
+
+====================================================================================================================
+
+Problem Statement
+
+Imagine Maria is developing a game, where it involves collecting resources on each planet, and the availability of resources is modelled using a geometric progression. 
+
+Create an abstract class Series with an abstract method nextTerm(). Implement a subclass called GeometricSeries that calculates the 
+next term in a geometric progression for the resource collection on planets. Allow players to input the initial resource level, resource growth ratio, 
+and the number of planets they plan to explore. 
+
+Display the predicted resource levels on each planet.
+Input format :
+The first line of input consists of an integer, representing the initial resource level.
+The second line consists of an integer, representing the growth ratio.
+The third line consists of an integer, representing the number of planets.
+Output format :
+The output displays the predicted resource levels of each planet, separated by space.
+
+Refer to the sample output for formatting specifications.
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+1 ≤ resource ≤ 10
+1 ≤ growth ratio ≤ 10
+1 ≤ number of planets ≤ 8
+Sample test cases :
+Input 1 :
+2
+3
+5
+Output 1 :
+2 6 18 54 162 
+Input 2 :
+5
+2
+3
+Output 2 :
+5 10 20
+
+====================================================================================================================
+
+Problem Statement
+
+Wick is developing a real-time strategy game where the players command armies represented by square matrices. 
+The game requires matrix operations to calculate army strength and overall battle outcomes. 
+
+Write a program to assist Wich that includes an abstract class MatrixOperation with an abstract method performOperation() and a class MatrixAddition. 
+Calculate the army strength by adding all the elements in the given matrices. Display the matrix that represents the army's strength.
+
+Input format :
+The first line of input consists of an integer N, representing the number of rows and columns of a square matrix.
+The next N lines consist of N space-separated integers, representing the elements of the first matrix.
+The following N lines consist of N space-separated integers representing the elements of another matrix.
+Output format :
+The output prints the army strength, which is the addition of the given matrices.
+
+Refer to the sample output for formatting specifications.
+Code constraints :
+The given test cases fall under the following constraints:
+1 ≤ N ≤ 5
+Sample test cases :
+Input 1 :
+2
+1 2
+3 4
+5 6
+7 8
+Output 1 :
+6 8 
+10 12 
+Input 2 :
+3
+1 2 3
+4 5 6
+7 8 9
+10 11 12
+13 14 15
+16 17 18
+Output 2 :
+11 13 15 
+17 19 21 
+23 25 27
+
+====================================================================================================================
+
+Assignment 1: Shape Area Calculation
+Create a parent class Shape with a method calculateArea() that prints "Area calculation not defined for Shape."
+Create subclasses:
+Circle that overrides calculateArea() to calculate and print the area of a circle.
+Rectangle that overrides calculateArea() to calculate and print the area of a rectangle.
+Write a Main class to demonstrate polymorphism using an array of Shape objects.
+
+2.
+Create a parent class Animal with a method makeSound() that prints "Some generic sound."
+Create subclasses:
+Dog that overrides makeSound() to print "Woof Woof."
+Cat that overrides makeSound() to print "Meow Meow."
+In the Main class, use polymorphism to call makeSound() on different Animal objects.
+
+Assignment 3.
+Create a parent class Bank with a method getInterestRate() that returns 0.
+Create subclasses:
+SBI that overrides getInterestRate() to return 5.
+ICICI that overrides getInterestRate() to return 6.
+Axis that overrides getInterestRate() to return 7.
+In the Main class, demonstrate method overriding by calling getInterestRate() on different bank objects.
+
+Assignment 4:
+Create a parent class Vehicle with a method speed() that prints "Speed varies for different vehicles."
+Create subclasses:
+Car that overrides speed() to print "The car speed is 120 km/h."
+Bike that overrides speed() to print "The bike speed is 80 km/h."
+Use polymorphism to display the speed of different vehicles in the Main class.
+
+Assignment 5:
+Create a parent class Employee with a method calculateSalary() that prints "Base salary calculation for Employee."
+Create subclasses:
+Manager that overrides calculateSalary() to add a bonus to the base salary.
+Developer that overrides calculateSalary() to calculate salary based on hours worked.
+Demonstrate the overridden method in the Main class by creating an array of Employee objects and calling calculateSalary() on each.
