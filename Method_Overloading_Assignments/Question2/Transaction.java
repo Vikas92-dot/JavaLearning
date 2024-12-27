@@ -3,15 +3,14 @@ public class Transaction {
     private double amount;
     
 
-    
-
     public Transaction() {
     }
+
     public Transaction(int transactionId, double amount) {
         this.transactionId = transactionId;
         this.amount = amount;
-        
     }
+    
     public int getTransactionId() {
         return transactionId;
     }
