@@ -14,7 +14,8 @@ class Rectangle implements Shape{
     }
 
     public void calculateArea(){
-        System.out.println("Area of Rectangle: "+(l*b));
+        double area = l*b;
+        System.out.printf("Area of Rectangle: %.2f",area);
     }
 }
 class Circle implements Shape{
@@ -25,7 +26,8 @@ class Circle implements Shape{
     }
 
     public void calculateArea(){
-        System.out.println("Area of Circle: "+(2*3.14*r));
+        double area = 2*3.14*r;
+        System.out.printf("Area of Circle: %.2f",area);
     }
 }
 

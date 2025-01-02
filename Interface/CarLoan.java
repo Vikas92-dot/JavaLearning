@@ -23,7 +23,7 @@ public class CarLoan implements Principal,IntrestRate {
     }
     void calculation(){
         double res = p*r*t;
-        System.out.printf("Total intrest paid: Rs. %.2f",res);
+        System.out.printf("Total intrest paid: Rs.%.2f",res);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class CarLoan implements Principal,IntrestRate {
         System.out.println("Enter the loan duration:");
         double d = Double.parseDouble(sc.nextLine());
 
-        System.out.println("Submit Code!");
+        System.out.print("Submit Code!");
         sc.nextLine();
 
         if (p < 1.00 || p > 1000000.00 || r < 0.01 || r > 0.99 || d < 1) {
