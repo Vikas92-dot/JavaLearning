@@ -104,5 +104,3 @@ Extra spaces and new line characters in the program output will result in the fa
 5. WAP to read a string from user and convert all the vovels into upper case.
 
 6. WAP to convert First character of every word into upper case.
-
-angular nodejs, statistics and basic program, logical reasoning.
