@@ -4,17 +4,21 @@ class A{
         try{
             String str = null;
             int x=str.length();
-            // return 90;
+            return 90;
         }
         catch(NullPointerException ee){
             System.out.println(ee);
-            return 30;
+            return 700;
         }
-        // catch(Exception e){
-        //     return 30;
-        // }
-        return 60;
-    }
+        catch(Exception e){
+            return 600; 
+        }
+        finally{
+            System.out.println("Finally block"); 
+            //return 60; //It overrides the catch return value
+        }
+        
+    }  
 }
 
 public class Second {
